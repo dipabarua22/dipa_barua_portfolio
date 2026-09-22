@@ -1,199 +1,982 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dipa Barua | portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="data:,">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--  for icons  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <meta name="description"
+        content="Dipa Barua - Computer Science and Engineering student, Full Stack Developer and aspiring AI Engineer.">
+
+    <title>Dipa Barua | Developer Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
-    <!--  Header and navber  -->
-    <header>
-        <nav class="navbar">
-            <h1>DIPA BARUA</h1>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+
+    <!-- Background Effect -->
+    <div class="background-blur blur-1"></div>
+    <div class="background-blur blur-2"></div>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="header">
+
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">
+                Dipa<span>.</span>
+            </a>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+
+                <li>
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+
+                <li>
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+
+                <li>
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li>
+                    <a href="research.html" class="nav-link">Research</a>
+                </li>
+
+                <li>
+                    <a href="achievement.html" class="nav-link">Achievements</a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+
             </ul>
+
+            <div class="nav-actions">
+
+                <a href="#contact" class="nav-contact">
+                    Let's Talk
+                </a>
+
+                <button class="menu-btn" id="menuBtn"
+                    aria-label="Open navigation menu">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+            </div>
+
         </nav>
+
     </header>
 
-    <!--  Home Section  -->
-    <section class="home">
-        <div class="home-text">
-            <h2>Hi, I'm <span>DIPA BARUA</span></h2>
-            <p>Welcome to my portfolio.</p>
-            <p>I'm a passionate web developer with a knack for creating dynamic and responsive websites.</p>
 
-            <!--  Social Media Links  -->
-            <div class="social-links">
-                <a href="https://github.com/dipabarua22" target="_blank">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-                <a href="" target="_blank">
-                    <i class="fab fa-facebook"></i> Facebook
-                </a>
-                <a href="https://www.linkedin.com/in/dipa-barua-387071303/" target="_blank">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
-            </div>
-        </div>
-        <!--  profile Image  -->
-        <div class="home-img">
-            <img src="images/imp.png" alt="Profile Picture of Dipa" />
-        </div>
-    </section>
+    <main>
 
-    <!-- About Section-->
-    <section class="about" id="about">
-        <div class="about-container">
-            <div class="about-left">
-                <img src="images/about1.jpg" alt="About photo">
-            </div>
-            <div class="about-right">
-                <h2>About Me</h2>
-                <p>
-                    Hello, I’m <strong>Dipa</strong>, a Computer Science and Engineering student
-                    passionate about Full Stack Development and Artificial Intelligence.
-                </p>
-                <p>
-                    I have worked on projects such as a Student Transport Management System,where I focused on frontend
-                    card generation and optimized PostgreSQL operations.
-                    I enjoy building modern web apps with tools like
-                    <span class="highlight">React, Django, and Node.js</span>.
-                </p>
-                <p>
-                    My goal is to become an AI Engineer and use technology to solve
-                    real-world problems. I believe in clean code, continuous learning,
-                    and building systems that create real impact.
-                </p>
-            </div>
-        </div>
-    </section>
-    <!-- Skill Section -->
-    <section class="skills" id="skills">
-        <h2>Skills</h2>
-        <div class="skill-boxes">
-            <div class="skill-card"><img src="images/html.png" alt="HTML LOGO/ICON">
-                <p>HTML</p>
-            </div>
-            <div class="skill-card"><img src="images/css.png" alt="CSS LOGO/ICON">
-                <p>CSS</p>
-            </div>
-            <div class="skill-card"><img src="images/js.png" alt="JS LOGO/ICON">
-                <p>JavaScript</p>
-            </div>
-            <div class="skill-card"><img src="images/react.png" alt="React LOGO/ICON">
-                <p>React</p>
-            </div>
-            <div class="skill-card"><img src="images/bootstrap.png" alt="Bootstrap LOGO/ICON">
-                <p>Bootstrap</p>
-            </div>
-            <div class="skill-card"><img src="images/github.png" alt="GitHub LOGO">
-                <p>Git & GitHub</p>
-            </div>
-            <div class="skill-card"><img src="images/python.png" alt="Python LOGO">
-                <p>Python</p>
-            </div>
-            <div class="skill-card"><img src="images/nextjs.png" alt="Django LOGO">
-                <p>Django</p>
-            </div>
-        </div>
-    </section>
+        <!-- ================= HOME ================= -->
 
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-        <h2>My Projects</h2>
-        <div class="project-container">
-            <!--project1-->
-            <div class="project-card">
-                <img src="images/qr-code.jpg" alt="QR Code Generator-image to QR">
-                <div class="project-content">
-                    <h3>Online Library management System</h3>
-                    <p>A Full Stack Web Development that transforms any URLs into fully functional QR codes.</p>
-                    <a href="https://github.com/dipabarua22/full_stack_project_-LMS-" target="_blank" class="view-btn">
-                        <i class="fab fa-github"></i> View Project ->
-                    </a>
+        <section class="hero section" id="home">
+
+            <div class="container hero-container">
+
+                <!-- Left -->
+
+                <div class="hero-content reveal">
+
+                    <div class="hero-badge">
+
+                        <span class="status-dot"></span>
+
+                        Available for opportunities
+
+                    </div>
+
+                    <p class="hero-intro">
+                        Hello, I'm
+                    </p>
+
+                    <h1>
+                        Dipa <span>Barua</span>
+                    </h1>
+
+                    <h2 class="hero-role">
+                        I'm a
+                        <span id="typingText"></span>
+                        <span class="typing-cursor">|</span>
+                    </h2>
+
+                    <p class="hero-description">
+
+                        Computer Science & Engineering student passionate
+                        about building modern web applications and exploring
+                        Artificial Intelligence.
+
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#projects"
+                            class="btn primary-btn">
+
+                            View My Work
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                        <a href="#contact"
+                            class="btn secondary-btn">
+
+                            Contact Me
+
+                        </a>
+
+                    </div>
+
+                    <div class="hero-social">
+
+                        <span>Follow me</span>
+
+                        <a
+                            href="https://github.com/dipabarua22"
+                            target="_blank"
+                            aria-label="GitHub">
+
+                            <i class="fa-brands fa-github"></i>
+
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/in/dipa-barua-387071303/"
+                            target="_blank"
+                            aria-label="LinkedIn">
+
+                            <i class="fa-brands fa-linkedin-in"></i>
+
+                        </a>
+
+                    </div>
+
                 </div>
-            </div>
-            <!--  project2 -->
-            <div class="project-card">
-                <img src="images/currency.jpeg" alt="Currency Converter preview">
-                <div class="project-content">
-                    <h3>Real-Time Currency Converter</h3>
-                    <p>An App that fetches live exchange rates to convert between different currencies.</p>
-                    <a href="https://github.com/dipabarua22/daily-python.git" target="_blank" class="view-btn">
-                        <i class="fab fa-github"></i> View Project ->
-                    </a>
+
+
+                <!-- Right -->
+
+                <div class="hero-image-wrapper reveal">
+
+                    <div class="hero-image-bg"></div>
+
+                    <div class="hero-image">
+
+                        <img
+                            src="images/ChatGPT Image Sep 22, 2026, 07_27_35 PM.png"
+                            alt="Dipa Barua">
+
+                    </div>
+
+                    <div class="floating-card code-card">
+
+                        <i class="fa-solid fa-code"></i>
+
+                        <div>
+                            <small>Passion</small>
+                            <strong>Development</strong>
+                        </div>
+
+                    </div>
+
+                    <div class="floating-card ai-card">
+
+                        <i class="fa-solid fa-brain"></i>
+
+                        <div>
+                            <small>Exploring</small>
+                            <strong>Artificial Intelligence</strong>
+                        </div>
+
+                    </div>
+
                 </div>
+
             </div>
-            <!--  project3 -->
-            <div class="project-card">
-                <img src="images/contact-book.jpg" alt="Contact book CLI preview">
-                <div class="project-content">
-                    <h3>Safety Hand Gesture Project</h3>
-                    <p>Terminal-based app to add, view, edit, and delete contact information.</p>
-                    <a href="https://github.com/dipabarua22/safety_hand_gesture_project" target="_blank"
-                        class="view-btn">
-                        <i class="fab fa-github"></i> View Project ->
-                    </a>
+
+        </section>
+
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="about section" id="about">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-tag">
+                        ABOUT ME
+                    </span>
+
+                    <h2>
+                        Turning ideas into
+                        <span>digital experiences.</span>
+                    </h2>
+
                 </div>
-            </div>
-            <!--  project4 -->
-            <div class="project-card">
-                <img src="images/all-in-one.jpg" alt="University managemnet system preview">
-                <div class="project-content">
-                    <h3>All_In _One_University_Project</h3>
-                    <p>This project helps manage university-related tasks such as student records, faculty details,
-                        course management, and more.</p>
-                    <a href="https://github.com/dipabarua22/All-In-One-University.git" target="_blank" class="view-btn">
-                        <i class="fab fa-github"></i> View Project ->
-                    </a>
+
+
+                <div class="about-container">
+
+                    <div class="about-image reveal">
+
+                        <img
+                            src="images/about1.jpg"
+                            alt="About Dipa Barua">
+
+                    </div>
+
+
+                    <div class="about-content reveal">
+
+                        <p>
+
+                            Hello, I'm
+                            <strong>Dipa Barua</strong>,
+                            a Computer Science and Engineering student
+                            interested in Full Stack Development and
+                            Artificial Intelligence.
+
+                        </p>
+
+                        <p>
+
+                            I enjoy creating modern, responsive web
+                            applications and continuously improving my
+                            problem-solving and software development skills.
+
+                        </p>
+
+                        <p>
+
+                            My goal is to become an
+                            <strong>AI Engineer</strong>
+                            and build useful technology that solves
+                            real-world problems.
+
+                        </p>
+
+
+                        <div class="about-info">
+
+                            <div>
+
+                                <span>Name</span>
+                                <p>Dipa Barua</p>
+
+                            </div>
+
+                            <div>
+
+                                <span>Location</span>
+                                <p>Cumilla, Bangladesh</p>
+
+                            </div>
+
+                            <div>
+
+                                <span>Focus</span>
+                                <p>Full Stack Development</p>
+
+                            </div>
+
+                            <div>
+
+                                <span>Goal</span>
+                                <p>AI Engineer</p>
+
+                            </div>
+
+                        </div>
+
+
+                        <a href="#contact"
+                            class="btn primary-btn">
+
+                            Let's Work Together
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
                 </div>
+
             </div>
-        </div>
-    </section>
 
-    <!-- Contact Section  -->
-    <section class="contact" id="contact">
-        <div class="contact-form">
-            <h3>Send Me a Message</h3>
-            <!-- Form part -->
-           <form action="https://formsubmit.co/dipabarua44@gmail.com" method="POST">
-                <input type="text" name ="name"placeholder="Your Name" required />
-                <input type="email" name ="email"placeholder="Email Address" required />
-                <input type="text" name ="subject"placeholder="Subject" />
-                <textarea rows="5" name ="message"placeholder="Your message here..." required></textarea>
-                <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
-            </form>
-        </div>
-        <!-- contact information -->
-        <div class="contact-info">
-        
-            <h4><i class="fas fa-envelope"></i> Email</h4>
-            <p>dipabarua44@gmail.com</p>
+        </section>
 
-            <h4><i class="fas fa-phone"></i> Phone</h4>
-            <p>+0881234-56789</p>
 
-            <h4><i class="fas fa-map-marker-alt"></i> Location</h4>
-            <p>Cumilla, Bangladesh</p>
 
-        </div>
-    </section>
+        <!-- ================= SKILLS ================= -->
 
-    <!-- Footer section -->
+        <section class="skills section" id="skills">
+
+            <div class="container">
+
+                <div class="section-heading center reveal">
+
+                    <span class="section-tag">
+                        MY SKILLS
+                    </span>
+
+                    <h2>
+                        Technologies I
+                        <span>work with.</span>
+                    </h2>
+
+                    <p>
+
+                        Some of the technologies and tools I use
+                        while building applications.
+
+                    </p>
+
+                </div>
+
+
+                <div class="skills-grid">
+
+                    <div class="skill-card reveal">
+
+                        <img src="images/html.png" alt="HTML">
+
+                        <h3>HTML</h3>
+
+                        <p>Structure</p>
+
+                    </div>
+
+
+                    <div class="skill-card reveal">
+
+                        <img src="images/css.png" alt="CSS">
+
+                        <h3>CSS</h3>
+
+                        <p>Styling</p>
+
+                    </div>
+
+
+                    <div class="skill-card reveal">
+
+                        <img src="images/js.png" alt="JavaScript">
+
+                        <h3>JavaScript</h3>
+
+                        <p>Development</p>
+
+                    </div>
+
+
+                    <div class="skill-card reveal">
+
+                        <img src="images/react.png" alt="React">
+
+                        <h3>React</h3>
+
+                        <p>Frontend</p>
+
+                    </div>
+
+
+                    <div class="skill-card reveal">
+
+                        <img src="images/bootstrap.png"
+                            alt="Bootstrap">
+
+                        <h3>Bootstrap</h3>
+
+                        <p>Frontend</p>
+
+                    </div>
+
+
+                    <div class="skill-card reveal">
+
+                        <img src="images/github.png"
+                            alt="GitHub">
+
+                        <h3>Git & GitHub</h3>
+
+                        <p>Version Control</p>
+
+                    </div>
+
+
+                    <div class="skill-card reveal">
+
+                        <img src="images/python.png"
+                            alt="Python">
+
+                        <h3>Python</h3>
+
+                        <p>Programming</p>
+
+                    </div>
+
+
+                    <div class="skill-card reveal">
+
+                        <img src="images/nextjs.png"
+                            alt="Django">
+
+                        <h3>Django</h3>
+
+                        <p>Backend</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section class="projects section" id="projects">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-tag">
+                        MY WORK
+                    </span>
+
+                    <h2>
+                        Featured
+                        <span>Projects.</span>
+                    </h2>
+
+                    <p>
+
+                        A selection of projects I have worked on
+                        while developing my programming skills.
+
+                    </p>
+
+                </div>
+
+
+                <div class="projects-grid">
+
+
+                    <!-- Project 1 -->
+
+                    <article class="project-card reveal">
+
+                        <div class="project-image">
+
+                            <img
+                                src="images/qr-code.jpg"
+                                alt="Online Library Management System">
+
+                            <div class="project-overlay">
+
+                                <a
+                                    href="https://github.com/dipabarua22/full_stack_project_-LMS-"
+                                    target="_blank"
+                                    aria-label="View GitHub repository">
+
+                                    <i class="fa-brands fa-github"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <div class="project-number">
+                                01
+                            </div>
+
+                            <h3>
+                                Online Library Management System
+                            </h3>
+
+                            <p>
+
+                                A full-stack library management application
+                                designed to organize books, users and
+                                library-related operations efficiently.
+
+                            </p>
+
+                            <div class="project-tech">
+
+                                <span>Full Stack</span>
+                                <span>Web</span>
+
+                            </div>
+
+                            <a
+                                href="https://github.com/dipabarua22/full_stack_project_-LMS-"
+                                target="_blank"
+                                class="project-link">
+
+                                View Project
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Project 2 -->
+
+                    <article class="project-card reveal">
+
+                        <div class="project-image">
+
+                            <img
+                                src="images/currency.jpeg"
+                                alt="Currency Converter">
+
+                            <div class="project-overlay">
+
+                                <a
+                                    href="https://github.com/dipabarua22/daily-python.git"
+                                    target="_blank">
+
+                                    <i class="fa-brands fa-github"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <div class="project-number">
+                                02
+                            </div>
+
+                            <h3>
+                                Real-Time Currency Converter
+                            </h3>
+
+                            <p>
+
+                                A currency conversion application that
+                                retrieves exchange-rate data and converts
+                                values between different currencies.
+
+                            </p>
+
+                            <div class="project-tech">
+
+                                <span>Python</span>
+                                <span>API</span>
+
+                            </div>
+
+                            <a
+                                href="https://github.com/dipabarua22/daily-python.git"
+                                target="_blank"
+                                class="project-link">
+
+                                View Project
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Project 3 -->
+
+                    <article class="project-card reveal">
+
+                        <div class="project-image">
+
+                            <img
+                                src="images/contact-book.jpg"
+                                alt="Safety Hand Gesture Project">
+
+                            <div class="project-overlay">
+
+                                <a
+                                    href="https://github.com/dipabarua22/safety_hand_gesture_project"
+                                    target="_blank">
+
+                                    <i class="fa-brands fa-github"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <div class="project-number">
+                                03
+                            </div>
+
+                            <h3>
+                                Safety Hand Gesture Project
+                            </h3>
+
+                            <p>
+
+                                A computer-vision focused project exploring
+                                hand gestures for safety-related
+                                interaction and recognition.
+
+                            </p>
+
+                            <div class="project-tech">
+
+                                <span>Python</span>
+                                <span>Computer Vision</span>
+
+                            </div>
+
+                            <a
+                                href="https://github.com/dipabarua22/safety_hand_gesture_project"
+                                target="_blank"
+                                class="project-link">
+
+                                View Project
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Project 4 -->
+
+                    <article class="project-card reveal">
+
+                        <div class="project-image">
+
+                            <img
+                                src="images/all-in-one.jpg"
+                                alt="All In One University Project">
+
+                            <div class="project-overlay">
+
+                                <a
+                                    href="https://github.com/dipabarua22/All-In-One-University.git"
+                                    target="_blank">
+
+                                    <i class="fa-brands fa-github"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <div class="project-number">
+                                04
+                            </div>
+
+                            <h3>
+                                All-In-One University System
+                            </h3>
+
+                            <p>
+
+                                A university management project for
+                                handling student information, faculty,
+                                courses and other academic operations.
+
+                            </p>
+
+                            <div class="project-tech">
+
+                                <span>Management System</span>
+                                <span>Web</span>
+
+                            </div>
+
+                            <a
+                                href="https://github.com/dipabarua22/All-In-One-University.git"
+                                target="_blank"
+                                class="project-link">
+
+                                View Project
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section class="contact section" id="contact">
+
+            <div class="container">
+
+                <div class="contact-wrapper reveal">
+
+                    <div class="contact-left">
+
+                        <span class="section-tag">
+                            CONTACT
+                        </span>
+
+                        <h2>
+                            Have a project in mind?
+                            <span>Let's talk.</span>
+                        </h2>
+
+                        <p>
+
+                            Feel free to contact me regarding
+                            collaboration, projects or development
+                            opportunities.
+
+                        </p>
+
+
+                        <div class="contact-details">
+
+                            <a href="mailto:dipabarua44@gmail.com">
+
+                                <i class="fa-solid fa-envelope"></i>
+
+                                <div>
+
+                                    <small>Email</small>
+                                    <span>
+                                        dipabarua44@gmail.com
+                                    </span>
+
+                                </div>
+
+                            </a>
+
+
+                            <div>
+
+                                <i class="fa-solid fa-location-dot"></i>
+
+                                <div>
+
+                                    <small>Location</small>
+                                    <span>
+                                        Cumilla, Bangladesh
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-form-wrapper">
+
+                        <form
+                            action="https://formsubmit.co/dipabarua44@gmail.com"
+                            method="POST">
+
+                            <div class="input-group">
+
+                                <label for="name">
+                                    Name
+                                </label>
+
+                                <input
+                                    id="name"
+                                    type="text"
+                                    name="name"
+                                    placeholder="Your name"
+                                    required>
+
+                            </div>
+
+
+                            <div class="input-group">
+
+                                <label for="email">
+                                    Email
+                                </label>
+
+                                <input
+                                    id="email"
+                                    type="email"
+                                    name="email"
+                                    placeholder="your@email.com"
+                                    required>
+
+                            </div>
+
+
+                            <div class="input-group">
+
+                                <label for="subject">
+                                    Subject
+                                </label>
+
+                                <input
+                                    id="subject"
+                                    type="text"
+                                    name="subject"
+                                    placeholder="Project discussion">
+
+                            </div>
+
+
+                            <div class="input-group">
+
+                                <label for="message">
+                                    Message
+                                </label>
+
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="5"
+                                    placeholder="Tell me about your project..."
+                                    required></textarea>
+
+                            </div>
+
+
+                            <button
+                                type="submit"
+                                class="btn primary-btn submit-btn">
+
+                                Send Message
+
+                                <i class="fa-solid fa-paper-plane"></i>
+
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
     <footer>
-        <p>&copy; 2025 Dipa Barua | All rights reserved.</p>
+
+        <div class="container footer-content">
+
+            <a href="#home" class="logo">
+                Dipa<span>.</span>
+            </a>
+
+            <p>
+                © <span id="year"></span> Dipa Barua.
+                Built with passion & code.
+            </p>
+
+            <div class="footer-social">
+
+                <a
+                    href="https://github.com/dipabarua22"
+                    target="_blank">
+
+                    <i class="fa-brands fa-github"></i>
+
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/in/dipa-barua-387071303/"
+                    target="_blank">
+
+                    <i class="fa-brands fa-linkedin-in"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
     </footer>
+
+
+    <!-- Scroll To Top -->
+
+    <button
+        id="scrollTop"
+        class="scroll-top"
+        aria-label="Scroll to top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
