@@ -6,7 +6,7 @@ Hey there! 👋 This is my personal portfolio website, built to showcase my skil
 ## 📸 Preview
 
 ## Here's a sneak peek of what the portfolio looks like:
-![Portfolio Screenshot](images/image.jpg)
+![Portfolio Screenshot](images/portfolio333.png)
 
 ---
 
